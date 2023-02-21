@@ -4,12 +4,12 @@ import { TodoTextInput } from './TodoTextInput'
 import { useTodo } from '../useTodo'
 import { motion } from 'framer-motion'
 
-const el_costo_de_framer_motion = 0
-
+// se crean las variables de animacion
 const variants = {
   hidden: {
     opacity: 0
   },
+  // se da un valor dinamico al delay
   visible: ({ delay }) => ({
     opacity: 1,
     transition: {
@@ -66,10 +66,14 @@ export const TodoItem = ({ index, todo }) => {
         completed: todo.completed,
         editing
       })}
+      // se hace el calculo del valor dinámico
       custom={{ delay: (index + 1) * 0.1 }}
       initial='hidden'
+      // se añade el valor de las animaciones
       animate='visible'
+      // al salir se activa la animacion hidden.
       exit='hidden'
+      // se añade las variantes
       variants={variants}
       layoutId={todo.id}
     >

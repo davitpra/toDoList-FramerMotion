@@ -7,27 +7,27 @@ import { TodoProvider } from '../TodoProvider'
 const initialState = {
   todos: [
     {
-      text: 'React Hooks',
+      text: 'React Native',
       completed: false,
       id: 'b967afe24b23'
     },
     {
-      text: 'Viva la comunidad de Midu ORALE',
+      text: 'Learn how to animate with React',
       completed: true,
       id: '43286487fhsdjasd'
     },
     {
-      text: 'Hooooola Twitch!',
+      text: 'Oraaaleeee!',
       completed: false,
       id: '54937fhajd'
     },
     {
-      text: 'Context',
+      text: 'Try to move the items',
       completed: true,
       id: '43242341aaaaa'
     },
     {
-      text: 'BUA BUA BUA BUA',
+      text: 'Wooow! I love it',
       completed: true,
       id: 'b967afe24a13'
     }

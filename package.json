@@ -1,28 +1,32 @@
 {
     "name": "react-todo-app",
+    "homepage":"https://davitpra.github.io/toDoList-FramerMotion",
     "version": "0.0.0",
     "scripts": {
-      "dev": "vite",
-      "build": "vite build",
-      "preview": "vite preview"
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "predeploy":"npm run build",
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {
-      "classnames": "2.3.1",
-      "framer-motion": "6.2.3",
-      "install": "0.13.0",
-      "prop-types": "15.8.1",
-      "react": "17.0.2",
-      "react-dom": "17.0.2",
-      "todomvc-app-css": "2.4.1"
+        "classnames": "2.3.1",
+        "framer-motion": "6.2.3",
+        "install": "0.13.0",
+        "prop-types": "15.8.1",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "todomvc-app-css": "2.4.1"
     },
     "devDependencies": {
-      "@vitejs/plugin-react": "1.0.7",
-      "standard": "16.0.4",
-      "vite": "2.7.2"
+        "@vitejs/plugin-react": "1.0.7",
+        "gh-pages": "^5.0.0",
+        "standard": "16.0.4",
+        "vite": "2.7.2"
     },
     "eslintConfig": {
-      "extends": [
-        "./node_modules/standard/eslintrc.json"
-      ]
+        "extends": [
+            "./node_modules/standard/eslintrc.json"
+        ]
     }
-  }
+}
